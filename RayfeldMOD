@@ -563,7 +563,7 @@ local CoreGui = game:GetService("CoreGui")
 
 -- Interface Management
 
-local Rayfield = useStudio and script.Parent:FindFirstChild('Rayfield') or game:GetObjects("rbxassetid://10804731440")[1]
+local Rayfield = useStudio and script.Parent:FindFirstChild('Rayfield') or game:GetObjects("rbxassetid://106636582013933")[1]
 local buildAttempts = 0
 local correctBuild = false
 local warned
@@ -1496,7 +1496,7 @@ function RayfieldLibrary:CreateWindow(Settings)
 	end
 
 	if Settings.Icon and Settings.Icon ~= 0 and Topbar:FindFirstChild('Icon') then
-		Topbar.Icon.Visible = false
+		Topbar.Icon.Visible = true
 		Topbar.Title.Position = UDim2.new(0, 47, 0.5, 0)
 
 		if Settings.Icon then
